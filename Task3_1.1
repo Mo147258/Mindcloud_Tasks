@@ -1,0 +1,21 @@
+A shallow copy creates a new object but stores references to the same nested objects contained in the original. This means that changes to mutable nested elements in the copy will also affect the original object.
+
+For shallow Copy:
+Creates a new container but shares inner objects.
+
+Faster and uses less memory than deep copy.
+
+Risky when dealing with mutable nested data.
+
+
+
+A deep copy creates a completely independent copy of the original object, including all nested objects. Any changes made to the copy will not affect the original.
+
+For Deep Copy:
+Creates entirely independent objects.
+
+Safer for complex mutable data.
+
+Slower and uses more memory compared to shallow copy.
+
+The Difference Between them is that Shallow copy Copies the outer object but keeps references to the same nested objects. Changes to nested objects in the copy will affect the original, while Deep copy Copies the outer object and all nested objects recursively, creating completely independent duplicates. Changes in the copy do not affect the original.
